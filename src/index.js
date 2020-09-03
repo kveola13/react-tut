@@ -2,11 +2,12 @@ import ReactDOM from 'react-dom';
 import React from 'react'
 
 function formatName(user) {
-  return user.firstName + " " + user.lastName
+  return user.firstName + " " + user.middleName + " " + user.lastName
 }
 
 const user = {
   firstName: "Ola",
+  middleName: "Fredrik Ansnes",
   lastName: "Kveli"
 }
 
