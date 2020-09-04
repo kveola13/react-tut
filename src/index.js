@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 import React from 'react'
-
+import Clock from './clock'
 
 function Welcome(props){
   return <h1>Hello, {props.name}</h1>
@@ -28,20 +28,7 @@ function App(){
   )
 }
 
-function Clock(props) {
-  return(
-      <div>
-          <h1>Hello, World</h1>
-          <h2>It is {props.date.toLocaleTimeString()}.</h2>
-      </div>
-  )
-}
-
-function tick(){
   ReactDOM.render(
-      <Clock date={new Date()}/>,
+      <Clock />,
       document.getElementById('root')
   )
-}
-
-setInterval(tick, 1000)
