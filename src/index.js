@@ -16,9 +16,19 @@ class Welcome extends React.Component {
   }
 }*/
 
-const element = <Welcome name="Ola Fredrik"/>
+//const element = <Welcome name="Ola Fredrik"/>
+
+function App(){
+  return(
+    <div>
+      <Welcome name="John Smith" />
+      <Welcome name="Jane Doe" />
+      <Welcome name="Matt Murdock" />
+    </div>
+  )
+}
 
 ReactDOM.render(
-  element,
+  <App />,
   document.getElementById("root")
 )
