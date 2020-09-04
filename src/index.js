@@ -24,11 +24,12 @@ function App(){
       <Welcome name="John Smith" />
       <Welcome name="Jane Doe" />
       <Welcome name="Matt Murdock" />
+      <Clock />
     </div>
   )
 }
 
   ReactDOM.render(
-      <Clock />,
+      <App />,
       document.getElementById('root')
   )
