@@ -25,6 +25,8 @@ function App(){
       <Welcome name="Jane Doe" />
       <Welcome name="Matt Murdock" />
       <Clock />
+      <Clock />
+      <Clock />
     </div>
   )
 }
