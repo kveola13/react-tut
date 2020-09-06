@@ -18,6 +18,8 @@ function Greeting(props){
 }
 
 ReactDom.render(
-    <Greeting isLoggedIn={false} />,
+    <Greeting isLoggedIn={true} />,
     document.getElementById('root')
 )
+
+export default Greeting
