@@ -2,6 +2,7 @@ import ReactDOM from 'react-dom';
 import React from 'react'
 import Clock from './clock'
 import Toggle from './toggle'
+import LoggingButton from './loggingbutton';
 
 function Welcome(props){
   return <h1>Hello, {props.name}</h1>
@@ -29,6 +30,7 @@ function App(){
       <Clock />
       <Clock />
       <Toggle />
+      <LoggingButton />
     </div>
   )
 }
