@@ -5,6 +5,7 @@ import Toggle from './toggle'
 import LoggingButton from './loggingbutton';
 import Greeting from './usergreeting';
 import LoginControl from './logincontrol';
+import Mailbox from './mailbox';
 
 function Welcome(props){
   return <h1>Hello, {props.name}</h1>
@@ -23,6 +24,8 @@ class Welcome extends React.Component {
 //const element = <Welcome name="Ola Fredrik"/>
 
 function App(){
+  const messages = ['React', 'RE:React', 'RE:RE: React']
+  const emptyMessages = []
   return(
     <div>
       <Welcome name="John Smith" />
@@ -33,6 +36,7 @@ function App(){
       <LoggingButton />
       <Greeting isLoggedIn={false}/>
       <LoginControl />
+      <Mailbox unreadMessages={emptyMessages}/>
       </div>
   )
 }
