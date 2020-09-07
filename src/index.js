@@ -4,6 +4,7 @@ import Clock from './clock'
 import Toggle from './toggle'
 import LoggingButton from './loggingbutton';
 import Greeting from './usergreeting';
+import LoginControl from './logincontrol';
 
 function Welcome(props){
   return <h1>Hello, {props.name}</h1>
@@ -31,7 +32,8 @@ function App(){
       <Toggle />
       <LoggingButton />
       <Greeting isLoggedIn={false}/>
-    </div>
+      <LoginControl />
+      </div>
   )
 }
 
