@@ -25,6 +25,8 @@ class Welcome extends React.Component {
 //const element = <Welcome name="Ola Fredrik"/>
 
 function App(){
+  const numbers = [1,2,3,4,5]
+  const listItems = numbers.map((number) => <li>{number}</li>)
   const messages = ['React', 'RE:React', 'RE:RE: React']
   return(
     <div>
@@ -38,9 +40,12 @@ function App(){
       <LoginControl />
       <Mailbox unreadMessages={messages}/>
       <Page />
+      <ul>{listItems}</ul>
       </div>
   )
 }
+
+
 
   ReactDOM.render(
       <App />,
