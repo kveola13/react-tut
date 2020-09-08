@@ -26,7 +26,6 @@ class Welcome extends React.Component {
 
 function App(){
   const messages = ['React', 'RE:React', 'RE:RE: React']
-  const emptyMessages = []
   return(
     <div>
       <Welcome name="John Smith" />
@@ -37,7 +36,7 @@ function App(){
       <LoggingButton />
       <Greeting isLoggedIn={false}/>
       <LoginControl />
-      <Mailbox unreadMessages={emptyMessages}/>
+      <Mailbox unreadMessages={messages}/>
       <Page />
       </div>
   )
