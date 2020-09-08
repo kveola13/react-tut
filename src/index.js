@@ -7,6 +7,7 @@ import Greeting from './usergreeting';
 import LoginControl from './logincontrol';
 import Mailbox from './mailbox';
 import Page from './page';
+import NumberList from './numberlist';
 
 function Welcome(props){
   return <h1>Hello, {props.name}</h1>
@@ -26,7 +27,6 @@ class Welcome extends React.Component {
 
 function App(){
   const numbers = [1,2,3,4,5]
-  const listItems = numbers.map((number) => <li>{number}</li>)
   const messages = ['React', 'RE:React', 'RE:RE: React']
   return(
     <div>
@@ -40,7 +40,7 @@ function App(){
       <LoginControl />
       <Mailbox unreadMessages={messages}/>
       <Page />
-      <ul>{listItems}</ul>
+      <NumberList numbers={numbers}/>
       </div>
   )
 }
