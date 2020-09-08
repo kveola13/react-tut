@@ -6,6 +6,7 @@ import LoggingButton from './loggingbutton';
 import Greeting from './usergreeting';
 import LoginControl from './logincontrol';
 import Mailbox from './mailbox';
+import Page from './page';
 
 function Welcome(props){
   return <h1>Hello, {props.name}</h1>
@@ -37,6 +38,7 @@ function App(){
       <Greeting isLoggedIn={false}/>
       <LoginControl />
       <Mailbox unreadMessages={emptyMessages}/>
+      <Page />
       </div>
   )
 }
