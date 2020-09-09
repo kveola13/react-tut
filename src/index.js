@@ -31,7 +31,7 @@ function App(){
   const messages = ['React', 'RE:React', 'RE:RE: React']
   const posts = [
     {id: 1, title: 'Hello world', content:'Learning React'},
-    {id: 2, title: "Installation", content: "Install react from npm"}
+    {id: 2, title: 'Installation', content: 'Install react from npm'}
   ]
   return(
     <div>
