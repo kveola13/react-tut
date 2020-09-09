@@ -6,11 +6,10 @@ function ListItem(props){
 
 function NumberList(props){
     const numbers = props.numbers
-    const listItems = numbers.map((number)=> 
-        <ListItem key={number.toString()} value={number}></ListItem>
-    )
     return (
-        <ul>{listItems}</ul>
+        <ul>{numbers.map((number) => 
+            <ListItem key={number.toString()} value={number}
+        />)}</ul>
     )
 }
 
