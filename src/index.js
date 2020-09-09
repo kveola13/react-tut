@@ -8,6 +8,7 @@ import LoginControl from './logincontrol';
 import Mailbox from './mailbox';
 import Page from './page';
 import NumberList from './numberlist';
+import Blog from './blog';
 
 function Welcome(props){
   return <h1>Hello, {props.name}</h1>
@@ -28,6 +29,10 @@ class Welcome extends React.Component {
 function App(){
   const numbers = [1,2,3,4,5]
   const messages = ['React', 'RE:React', 'RE:RE: React']
+  const posts = [
+    {id: 1, title: 'Hello world', content:'Learning React'},
+    {id: 2, title: "Installation", content: "Install react from npm"}
+  ]
   return(
     <div>
       <Welcome name="John Smith" />
@@ -41,12 +46,10 @@ function App(){
       <Mailbox unreadMessages={messages}/>
       <Page />
       <NumberList numbers={numbers}/>
+      <Blog posts={posts}></Blog>
       </div>
   )
 }
-
-
-
   ReactDOM.render(
       <App />,
       document.getElementById('root')
