@@ -30,7 +30,7 @@ function App(){
   const numbers = [1,2,3,4,5]
   const messages = ['React', 'RE:React', 'RE:RE: React']
   const posts = [
-    {id: 1, title: 'Hello world', content:'Learning React'},
+    {id: 1, title: 'Hello world', content: 'Learning React'},
     {id: 2, title: 'Installation', content: 'Install react from npm'}
   ]
   return(
@@ -46,7 +46,7 @@ function App(){
       <Mailbox unreadMessages={messages}/>
       <Page />
       <NumberList numbers={numbers}/>
-      <Blog posts={posts}></Blog>
+      <Blog posts={posts} />
       </div>
   )
 }
