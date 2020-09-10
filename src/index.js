@@ -9,6 +9,9 @@ import Mailbox from './mailbox';
 import Page from './page';
 import NumberList from './numberlist';
 import Blog from './blog';
+import NameForm from './nameform';
+import EssayForm from './essayform';
+import FlavorForm from './flavorform';
 
 function Welcome(props){
   return <h1>Hello, {props.name}</h1>
@@ -47,6 +50,9 @@ function App(){
       <Page />
       <NumberList numbers={numbers}/>
       <Blog posts={posts} />
+      <NameForm />
+      <EssayForm />
+      <FlavorForm />
       </div>
   )
 }
