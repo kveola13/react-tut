@@ -12,6 +12,7 @@ import Blog from './blog';
 import NameForm from './nameform';
 import EssayForm from './essayform';
 import FlavorForm from './flavorform';
+import Reservation from './reservation';
 
 function Welcome(props){
   return <h1>Hello, {props.name}</h1>
@@ -53,6 +54,7 @@ function App(){
       <NameForm />
       <EssayForm />
       <FlavorForm />
+      <Reservation />
       </div>
   )
 }
