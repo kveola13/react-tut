@@ -13,6 +13,7 @@ import NameForm from './nameform';
 import EssayForm from './essayform';
 import FlavorForm from './flavorform';
 import Reservation from './reservation';
+import Calculator from './calculator';
 
 function Welcome(props){
   return <h1>Hello, {props.name}</h1>
@@ -55,6 +56,7 @@ function App(){
       <EssayForm />
       <FlavorForm />
       <Reservation />
+      <Calculator/>
       </div>
   )
 }
