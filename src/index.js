@@ -14,8 +14,8 @@ import EssayForm from './essayform';
 import FlavorForm from './flavorform';
 import Reservation from './reservation';
 import Calculator from './calculator';
-import FancyBorder from './signupdialog';
 import { SplitPane } from './splitpane';
+import SignUpDialog from './signupdialog';
 
 function Welcome(props){
   return <h1>Hello, {props.name}</h1>
@@ -59,7 +59,7 @@ function App(){
       <FlavorForm />
       <Reservation />
       <Calculator/>
-      <FancyBorder />
+      <SignUpDialog />
       <SplitPane />
       </div>
   )
