@@ -43,11 +43,11 @@ class SignUpDialog extends React.Component {
     render(){
         return(
             <Dialog title="World exploration program"
-            message="Team America?">
+            message="What's your name?">
                 <input value={this.state.login}
                 onChange={this.handleChange}/>
                 <button onClick={this.handleSignUp}>
-                    Sign up!
+                    Sign up for space exploration!
                 </button>
             </Dialog>
         )
