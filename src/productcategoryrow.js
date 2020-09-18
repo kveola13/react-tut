@@ -42,6 +42,12 @@ class ProductTable extends React.Component{
                     key={product.category}/>
                 )
             }
+            rows.push(
+                <ProductRow
+                product={product}
+                key={product.name}
+                />
+            )
             lastCategory = product.category
         });
         return(
@@ -84,6 +90,4 @@ class FilterableProductTable extends React.Component{
     }
 }
 
-const PRODUCTS = {}
-
-export default ProductCategoryRow
+export default FilterableProductTable
