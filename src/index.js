@@ -16,6 +16,7 @@ import Reservation from './reservation';
 import Calculator from './calculator';
 import { SplitPane } from './splitpane';
 import SignUpDialog from './signupdialog';
+import FilterableProductTable from './productcategoryrow';
 
 function Welcome(props){
   return <h1>Hello, {props.name}</h1>
@@ -40,6 +41,14 @@ function App(){
     {id: 1, title: 'Hello world', content: 'Learning React'},
     {id: 2, title: 'Installation', content: 'Install react from npm'}
   ]
+  const PRODUCTS = [
+    {category: "Sporting Goods", price: "$49.99", stocked: true, name: "Football"},
+    {category: "Sporting Goods", price: "$9.99", stocked: true, name: "Baseball"},
+    {category: "Sporting Goods", price: "$29.99", stocked: false, name: "Basketball"},
+    {category: "Electronics", price: "$99.99", stocked: true, name: "iPod Touch"},
+    {category: "Electronics", price: "$399.99", stocked: false, name: "iPhone 5"},
+    {category: "Electronics", price: "$199.99", stocked: true, name: "Nexus 7"}
+]
   return(
     <div>
       <Welcome name="John Smith" />
@@ -61,6 +70,7 @@ function App(){
       <Calculator/>
       <SignUpDialog />
       <SplitPane />
+      <FilterableProductTable products={PRODUCTS}/>
       </div>
   )
 }
